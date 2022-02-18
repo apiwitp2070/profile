@@ -52,6 +52,7 @@ const Home = () => {
         <div className='absolute mx-8 my-4'>
           <Image 
             src={homeicon} 
+            alt='homeicon'
             width={36}
             height={36}
             className='lg:hover:rotate-180 transition duration-300'
@@ -76,6 +77,7 @@ const Home = () => {
               <div id='pfp' className='w-1/2 max-w-2xs lg:max-w-xs place-self-center md:ml-12 lg:ml-16 xl:ml-32'>
                 <Image 
                   src={profile} 
+                  alt='profile'
                   id='pic'
                   className='w-full h-auto rounded-full'/>
               </div>
@@ -108,7 +110,7 @@ const Home = () => {
               <h1 className='mb-8 font-semibold text-3xl md:text-4xl text-gray-800'>About Me</h1>
               <p>Hello, My name is Apiwit prasittikarnkul. You can call me Yoseph or Yo.</p>
               <p>
-                Graduated from Kasetsart University in major of Computer Engineering, I'm Junior frontend developer who have 
+                Graduated from Kasetsart University in major of Computer Engineering, I am Junior frontend developer who have 
                 interest in using and improving my skill to develop an eye-pleasing website in a various way.
               </p>
               <div className='rounded-md border border-black text-black max-w-fit mt-8'>

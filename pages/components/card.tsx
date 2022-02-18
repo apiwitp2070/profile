@@ -24,6 +24,7 @@ export default function Card({
 			<div className={position}>
 				<Image 
 					src={image}
+					alt='img'
 					className='rounded-md'
 				/>
 				<div className="px-4 pb-4">
