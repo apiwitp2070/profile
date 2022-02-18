@@ -10,22 +10,24 @@ import {
   easygame,
   fynspace,
   homeicon,
+  kuacty,
+  heatalert,
   osc,
 } from '../public'
 
 const Home = () => {
   const about = useRef<any>(null);
   const project = useRef<any>(null);
-  const [headBg, setheadBg] = useState('z-50 invisible fixed top-4 left-4 right-4 h-16 noselect font-light')
+  const [headBg, setheadBg] = useState('z-50 hidden fixed top-4 left-4 right-4 h-16 noselect font-light')
   const [header, setHeader] = useState('');
 
   const listenScrollEvent = (e: any) => {
     if (window.scrollY < 720) {
       setHeader('p-4 flex text-black');
-      setheadBg('z-50 transition duration-300 invisible fixed top-0 left-0 right-0 h-16 noselect font-light');
+      setheadBg('z-50 transition duration-300 hidden fixed top-0 left-0 right-0 h-16 noselect font-light');
     } else {
       setHeader('p-4 flex text-black');
-      setheadBg('z-50 transition duration-300 visible bg-white shadow fixed top-0 left-0 right-0 h-16 noselect font-light')
+      setheadBg('z-50 transition duration-300 block bg-white shadow fixed top-0 left-0 right-0 h-16 noselect font-light')
     }
   }
 
@@ -55,11 +57,11 @@ const Home = () => {
             alt='homeicon'
             width={36}
             height={36}
-            className='lg:hover:rotate-180 transition duration-300'
+            className='lg:hover:rotate-180 transition delay-50 duration-500'
             onClick={scrollToTop}
           />
         </div>
-        <div id='menu' className='absolute right-0 invisible sm:text-xl sm:visible'>
+        <div id='menu' className='absolute right-0 hidden sm:text-xl sm:block'>
           <div className={header}>
             <h5 className='px-4' onClick={scrollToAbout}>About</h5>
             <h5 className='px-4' onClick={scrollToProject}>Projects</h5>
@@ -70,7 +72,7 @@ const Home = () => {
 
       <div>
 
-        <div id='introduction' className='bg-black text-white h-screen flex justify-center relative'>
+        <div id='introduction' className='bg-black text-white h-screen flex justify-center relative noselect'>
 
           <div className='z-0 w-full pt-8 sm:mx-4 md:mx-32 flex flex-col justify-center'>
             <div className='flex flex-col md:flex-row-reverse justify-center'>
@@ -104,7 +106,7 @@ const Home = () => {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fillOpacity="1" d="M0,32L720,160L1440,32L1440,0L720,0L0,0Z"></path></svg>
           <div className='grid grid-cols-1 md:grid-cols-2 mx-8 md:mx-16'>
             <div>
-              pic
+              
             </div>
             <div className='text-justify font-light md:text-lg'>
               <h1 className='mb-8 font-semibold text-3xl md:text-4xl text-gray-800'>About Me</h1>
@@ -144,7 +146,7 @@ const Home = () => {
           <Card
             name='KU-ACTY'
             position='grid md:grid-cols-2 gap-8'
-            image={tagtrack}
+            image={kuacty}
             framework='React | Material UI'
             description="A website about club and activities in Kasetsart University.
             You can check your past activities that you attend. Total activity hours.
@@ -155,7 +157,7 @@ const Home = () => {
           <Card
             name='Heat Alert'
             position='flex flex-col md:flex-row-reverse gap-8'
-            image={easygame}
+            image={heatalert}
             framework='Python'
             description="An IoT with a use of PIR censor and heat detector, When a temperature in 
             the room exceed some point, It will sent an alarm to the room that have people."
@@ -182,15 +184,11 @@ const Home = () => {
           />
         </div>
 
-        <div className='text-4xl mx-4 mt-64'>
-          Contact
-        </div>
-
       </div>
       {/*End Body*/}
 
-      <footer className='mt-32 bg-black h-16'>
-        
+      <footer className='mt-64 bg-black text-white text-center h-16'>
+
       </footer>
 
     </div>
