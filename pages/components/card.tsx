@@ -34,6 +34,9 @@ export default function Card({
 					<p className='mt-4 text-justify'>
 						{description}
 					</p>
+					<button className="mt-12 px-4 py-2 border border-black bg-black text-white hover:bg-white hover:text-black transition duration-300 rounded-md">
+						More Info
+					</button>
 				</div>
 			</div>
 		</div>
