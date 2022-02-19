@@ -90,8 +90,12 @@ const Home = () => {
                 <h1 className='text-5.5vw sm:text-5vw md:text-4.5vw xl:text-4vw font-bold'>Apiwit Prasittikarnkul</h1>
                 <h1 className='text-4vw sm:text-3.5vw md:text-3vw lg:text-2.5vw font-light'>| Frontend Developer</h1>
                 <div className='flex mt-4 md:mt-8'>
+                <a href="https://web.facebook.com/apiwit.p" target='_blank' rel='noopener noreferrer'>
                   <FaFacebookSquare className='text-4.5vw md:text-4xl transition delay-150 duration-300 hover:text-blue-500 hover:scale-110'/>
-                  <FaGithub className='text-4.5vw md:text-4xl ml-4 transition delay-150 duration-300 hover:text-blue-500 hover:scale-110'/>
+                </a>
+                <a href="https://laevatein2070.github.io" target='_blank' rel='noopener noreferrer'>
+                  <FaGithub className='text-4.5vw md:text-4xl ml-4 transition delay-150 duration-300 hover:scale-110'/>
+                </a>
                 </div>
               </div>
             </div>
