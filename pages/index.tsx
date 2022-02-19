@@ -123,10 +123,13 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='bg-white text-black'>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f6" fillOpacity="1" d="M0,128L480,160L960,32L1440,96L1440,0L960,0L480,0L0,0Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f6" fillOpacity="1" d="M0,128L480,160L960,32L1440,96L1440,0L960,0L480,0L0,0Z"></path></svg>
+
+        <div style={{maxWidth: 1215}} className='bg-white text-black mx-auto'>
           <div ref={project}></div>
           <Card
+            isInfo={false}
+            weburl=""
             name='Tagtrack'
             position='grid md:grid-cols-2 gap-8'
             image={tagtrack}
@@ -136,6 +139,8 @@ const Home = () => {
             Design for phobia's patient that might encounter their cause unexpectly."
           />
           <Card
+            isInfo={true}
+            weburl="https://cpe-easygame.firebaseapp.com"
             name='EasyGame'
             position='flex flex-col md:flex-row-reverse gap-8'
             image={easygame}
@@ -145,6 +150,8 @@ const Home = () => {
             subject. develop with construct 3 engine and hosted with Google Firebase."
           />
           <Card
+            isInfo={false}
+            weburl=""
             name='KU-ACTY'
             position='grid md:grid-cols-2 gap-8'
             image={kuacty}
@@ -156,6 +163,8 @@ const Home = () => {
             This website is a part of final project in Software Engineering subject."
           />
           <Card
+            isInfo={false}
+            weburl=""
             name='Heat Alert'
             position='flex flex-col md:flex-row-reverse gap-8'
             image={heatalert}
@@ -164,6 +173,8 @@ const Home = () => {
             the room exceed some point, It will sent an alarm to the room that have people."
           />
           <Card
+            isInfo={true}
+            weburl="https://fynspace.com"
             name='Fynspace'
             position='grid md:grid-cols-2 gap-8'
             image={fynspace}
@@ -174,6 +185,8 @@ const Home = () => {
             This website is a part of my full-stack development at internship during May and June 2021."
           />
           <Card
+            isInfo={true}
+            weburl="https://online-simple-circuit.vercel.app"
             name='Online Simple Circuit'
             position='flex flex-col md:flex-row-reverse gap-8'
             image={osc}

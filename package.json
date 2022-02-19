@@ -8,9 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "lqip-loader": "^2.2.1",
     "moment": "^2.29.1",
     "next": "12.0.10",
     "next-optimized-images": "^2.6.2",
