@@ -79,6 +79,7 @@ const Home = () => {
             <div className='flex flex-col md:flex-row-reverse justify-center'>
               <div id='pfp' className='w-1/2 max-w-2xs lg:max-w-xs place-self-center md:ml-12 lg:ml-16 xl:ml-32'>
                 <Image 
+                  priority={true}
                   src={profile} 
                   alt='profile'
                   id='pic'
