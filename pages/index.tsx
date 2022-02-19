@@ -191,7 +191,7 @@ const Home = () => {
           />
           <Card
             isInfo={true}
-            weburl="https://online-simple-circuit.vercel.app"
+            weburl="https://laevatein2070-osc.vercel.app/online-simple-circuit"
             name='Online Simple Circuit'
             position='flex flex-col md:flex-row-reverse gap-8'
             image={osc}
