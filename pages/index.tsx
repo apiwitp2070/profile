@@ -93,7 +93,7 @@ const Home = () => {
                 <a href="https://web.facebook.com/apiwit.p" target='_blank' rel='noopener noreferrer'>
                   <FaFacebookSquare className='text-4.5vw md:text-4xl transition delay-150 duration-300 hover:text-blue-500 hover:scale-110'/>
                 </a>
-                <a href="https://laevatein2070.github.io" target='_blank' rel='noopener noreferrer'>
+                <a href="https://github.com/laevatein2070" target='_blank' rel='noopener noreferrer'>
                   <FaGithub className='text-4.5vw md:text-4xl ml-4 transition delay-150 duration-300 hover:scale-110'/>
                 </a>
                 </div>
