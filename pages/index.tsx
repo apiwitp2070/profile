@@ -149,10 +149,10 @@ const Home = () => {
             name='EasyGame'
             position='flex flex-col md:flex-row-reverse gap-8'
             image={easygame}
-            framework='Python'
-            description="A simple 2-players local game that can be play with a single button on an 
-            IoT board. This website is a part of final project in Practicum for Computer Engineering 
-            subject. develop with construct 3 engine and hosted with Google Firebase."
+            framework='Python | Construct 3 | Firebase'
+            description="A simple 2-players local shooting game that can be play with a keyboard or 
+            a single button on an IoT board. The gaming part has been developed with construct 3 engine
+            and hosted with Google Firebase."
           />
           <Card
             isInfo={false}
@@ -164,8 +164,7 @@ const Home = () => {
             description="A website about club and activities in Kasetsart University.
             You can check your past activities that you attend. Total activity hours.
             And see how much hours or activity you need to complete. You can also view
-            details such as time or place that that activity take place.
-            This website is a part of final project in Software Engineering subject."
+            details such as time or place that that activity take place."
           />
           <Card
             isInfo={false}
@@ -199,7 +198,7 @@ const Home = () => {
             description="An online circuit diagram maker develop using React and GoJS with a purpose
             of learning tool in the pandemic state. The purpose of the project is to make user experience
             as close as possible to an actual circuit connection in the classroom With more realistic IC 
-            component. This website is a part of my final project in Computer Engineering major."
+            component."
           />
         </div>
 
