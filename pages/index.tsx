@@ -53,6 +53,7 @@ const Home = () => {
       <header className={headBg}>
         <div className='absolute mx-8 my-4'>
           <Image 
+            priority={true}
             src={homeicon} 
             alt='homeicon'
             width={36}
