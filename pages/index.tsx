@@ -13,6 +13,7 @@ import {
   kuacty,
   heatalert,
   osc,
+  reacticon,
 } from '../public'
 
 const Home = () => {
@@ -110,7 +111,7 @@ const Home = () => {
 
         <div ref={about} className='bg-gray-100 text-black pb-20'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fillOpacity="1" d="M0,32L720,160L1440,32L1440,0L720,0L0,0Z"></path></svg>
-          <div className='grid grid-cols-1 md:grid-cols-2 mx-8 md:mx-16'>
+          <div className='grid grid-cols-1 md:grid-cols-2 mx-8 md:mx-32'>
             <div>
               
             </div>
@@ -118,8 +119,8 @@ const Home = () => {
               <h1 className='mb-8 font-semibold text-3xl md:text-4xl text-gray-800'>About Me</h1>
               <p>Hello, My name is Apiwit prasittikarnkul. You can call me Yoseph or Yo.</p>
               <p>
-                Graduated from Kasetsart University in major of Computer Engineering, I am Junior frontend developer who have 
-                interest in using and improving my skill to develop an eye-pleasing website in a various way.
+                Graduated from Kasetsart University in major of Computer Engineering, I am junior frontend developer who have 
+                interest in using and improving my skill to develop a simple yet beautiful website in a various way.
               </p>
               <div className='rounded-md border border-black text-black max-w-fit mt-8'>
                 <div className='font-normal rounded-md hover:translate-x-3 hover:bg-black hover:text-white duration-300 px-4 py-2'>Download Resume</div>
@@ -129,14 +130,16 @@ const Home = () => {
         </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f6" fillOpacity="1" d="M0,128L480,160L960,32L1440,96L1440,0L960,0L480,0L0,0Z"></path></svg>
+        <div ref={project}></div>
 
         <div style={{maxWidth: 1215}} className='bg-white text-black mx-auto'>
-          <div ref={project}></div>
           <Card
-            isInfo={false}
+            isInfo={true}
+            isWeb={false}
+            projectref="/projects/tagtrack"
             weburl=""
             name='Tagtrack'
-            position='grid md:grid-cols-2 gap-8'
+            position='grid lg:grid-cols-2 gap-8'
             image={tagtrack}
             framework='HTML | JavaScript | Python'
             description="An IoT device that can detect user heart rate. When heart rate exceed a 
@@ -144,10 +147,12 @@ const Home = () => {
             Design for phobia's patient that might encounter their cause unexpectly."
           />
           <Card
-            isInfo={true}
+            isInfo={false}
+            isWeb={true}
+            projectref="/"
             weburl="https://cpe-easygame.firebaseapp.com"
             name='EasyGame'
-            position='flex flex-col md:flex-row-reverse gap-8'
+            position='flex flex-col lg:flex-row-reverse gap-8'
             image={easygame}
             framework='Python | Construct 3 | Firebase'
             description="A simple 2-players local shooting game that can be play with a keyboard or 
@@ -156,9 +161,11 @@ const Home = () => {
           />
           <Card
             isInfo={false}
-            weburl=""
+            isWeb={false}
+            projectref="/"
+            weburl="/"
             name='KU-ACTY'
-            position='grid md:grid-cols-2 gap-8'
+            position='grid lg:grid-cols-2 gap-8'
             image={kuacty}
             framework='React | Material UI'
             description="A website about club and activities in Kasetsart University.
@@ -168,19 +175,23 @@ const Home = () => {
           />
           <Card
             isInfo={false}
-            weburl=""
+            isWeb={false}
+            projectref="/"
+            weburl="/"
             name='Heat Alert'
-            position='flex flex-col md:flex-row-reverse gap-8'
+            position='flex flex-col lg:flex-row-reverse gap-8'
             image={heatalert}
             framework='Python'
             description="An IoT with a use of PIR censor and heat detector, When a temperature in 
             the room exceed some point, It will sent an alarm to the room that have people."
           />
           <Card
-            isInfo={true}
+            isInfo={false}
+            isWeb={true}
+            projectref="/"
             weburl="https://fynspace.com"
             name='Fynspace'
-            position='grid md:grid-cols-2 gap-8'
+            position='grid lg:grid-cols-2 gap-8'
             image={fynspace}
             framework='Next.js | Strapi | Tailwind CSS'
             description="An art lover community. You can explore a variety of arts inside Fynspace. 
@@ -189,16 +200,32 @@ const Home = () => {
             This website is a part of my full-stack development at internship during May and June 2021."
           />
           <Card
-            isInfo={true}
+            isInfo={false}
+            isWeb={true}
+            projectref="/"
             weburl="https://laevatein2070-osc.vercel.app/online-simple-circuit"
             name='Online Simple Circuit'
-            position='flex flex-col md:flex-row-reverse gap-8'
+            position='flex flex-col lg:flex-row-reverse gap-8'
             image={osc}
             framework='React | GoJS | Tailwind CSS'
             description="An online circuit diagram maker develop using React and GoJS with a purpose
             of learning tool in the pandemic state. The purpose of the project is to make user experience
             as close as possible to an actual circuit connection in the classroom With more realistic IC 
             component."
+          />
+          <Card
+            isInfo={false}
+            isWeb={false}
+            projectref="/"
+            weburl="/"
+            name='React Practice Projects'
+            position='grid lg:grid-cols-2 gap-8'
+            image={reacticon}
+            framework='React with Many more'
+            description="A lot of small personal project to improve my React skills. Inspired by some React
+            coding roadmap found on some twitter comment. I decided to use it as an idea for coding practice
+            and trying a different tools or framework. Please look at my GitHub to see more details about what
+            I hvae done."
           />
         </div>
 
