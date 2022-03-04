@@ -30,7 +30,7 @@ const TagTrack = () => {
             onClick={scrollToTop}
           />
         </div>
-        <div id='menu' className='absolute right-0 sm:text-xl sm:block'>
+        <div id='menu' className='absolute right-0 text-xl'>
           <div className={'p-4 flex text-black'}>
             <Link href="/"><h5 className='px-4'>Home</h5></Link>
           </div>

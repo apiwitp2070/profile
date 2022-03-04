@@ -45,12 +45,10 @@ export default function Card({
 					<p className='mt-4 text-justify'>
 						{description}
 					</p>
-					<Link href={projectref} passHref>
-						<a>
-							<button className={isInfo ? button : 'hidden'}>
-								More Details
-							</button>
-						</a>
+					<Link href={projectref}>
+						<button className={isInfo ? button : 'hidden'}>
+							More Details
+						</button>
 					</Link>
 					<a href={weburl} target='_blank' rel='noopener noreferrer'>
 						<button className={isWeb ? button : 'hidden'}>
