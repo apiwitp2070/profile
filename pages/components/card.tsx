@@ -45,7 +45,7 @@ export default function Card({
 					<p className='mt-4 text-justify'>
 						{description}
 					</p>
-					<Link href={projectref}>
+					<Link href={projectref ?? ''}>
 						<button className={isInfo ? button : 'hidden'}>
 							More Details
 						</button>

@@ -137,7 +137,7 @@ const Home = () => {
             isInfo={true}
             isWeb={false}
             projectref="/projects/tagtrack"
-            weburl=""
+            weburl="/"
             name='Tagtrack'
             position='grid lg:grid-cols-2 gap-8'
             image={tagtrack}
