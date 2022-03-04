@@ -63,7 +63,7 @@ const Home = () => {
             onClick={scrollToTop}
           />
         </div>
-        <div id='menu' className='absolute right-0 hidden sm:text-xl sm:block'>
+        <div id='menu' className='absolute right-0 text-xl'>
           <div className={header}>
             <h5 className='px-4' onClick={scrollToAbout}>About</h5>
             <h5 className='px-4' onClick={scrollToProject}>Projects</h5>
