@@ -39,7 +39,7 @@ const TagTrack = () => {
       </header>
 
       <div className="xl:mx-8 -z-10 fixed top-0 left-0 right-0">
-        <Image src={tagtrack} />
+        <Image src={tagtrack} alt="tagtrack" />
       </div>
 
       <div className='z-40 xl:mx-8 pt-32'>
