@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FaFacebookSquare, FaGithub } from 'react-icons/fa'
-import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
 import Card from './components/card'
@@ -197,7 +196,7 @@ const Home = () => {
             description="An art lover community. You can explore a variety of arts inside Fynspace. 
             Everyone is welcomed. No matter that you are an artist, or just only people who took 
             interest in art. You can upload or take place in a bid for an art you want!
-            This website is a part of my full-stack development at internship during May and June 2021."
+            Some pages of the website is a part of my work from an internship during May and June 2021."
           />
           <Card
             isInfo={false}
@@ -224,8 +223,7 @@ const Home = () => {
             framework='React with Many more'
             description="A lot of small personal project to improve my React skills. Inspired by some React
             coding roadmap found on some twitter comment. I decided to use it as an idea for coding practice
-            and trying a different tools or framework. Please look at my GitHub to see more details about what
-            I hvae done."
+            and trying a different tools or framework. Please see my GitHub for more details about what I have done."
           />
         </div>
 
