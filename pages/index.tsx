@@ -208,7 +208,7 @@ const Home = () => {
             isInfo={false}
             isWeb={true}
             projectref="/"
-            weburl="https://laevatein2070-osc.vercel.app/online-simple-circuit"
+            weburl="https://online-simple-circuit.vercel.app/"
             name='Online Simple Circuit'
             date="2022"
             position='flex flex-col lg:flex-row-reverse gap-8'
