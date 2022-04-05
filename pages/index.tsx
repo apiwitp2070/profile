@@ -13,6 +13,7 @@ import {
   heatalert,
   osc,
   reacticon,
+  goohiw,
 } from '../public'
 
 const Home = () => {
@@ -215,6 +216,19 @@ const Home = () => {
           <Card
             isInfo={false}
             isWeb={false}
+            projectref="/"
+            weburl="/"
+            name='Goohiw'
+            position='grid lg:grid-cols-2 gap-8'
+            image={goohiw}
+            framework='JSP | HTML | Tailwind CSS'
+            description="A practice project in Web IR subject. A search engine about that food. With a custom
+            web crawler made for crawling some Thai food-related website as a database. The project has been done in JSP
+            host locally with Apache Tomcat. And the frontend page has been done in HTML with a help of Tailwind CSS."
+          />
+          <Card
+            isInfo={false}
+            isWeb={true}
             projectref="/"
             weburl="/"
             name='React Practice Projects'

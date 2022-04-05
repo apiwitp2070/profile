@@ -9,6 +9,7 @@ import kuacty3 from './kuacty3.png'
 import heatalert from './heatalert.png'
 import osc from './osc.png'
 import reacticon from './reacticon.png'
+import goohiw from './goohiw.png'
 
 export {
     profile,
@@ -22,4 +23,5 @@ export {
     heatalert,
     osc,
     reacticon,
+    goohiw,
 }
