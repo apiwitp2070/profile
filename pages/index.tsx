@@ -139,6 +139,7 @@ const Home = () => {
             projectref="/projects/tagtrack"
             weburl="/"
             name='Tagtrack'
+            date="2019"
             position='grid lg:grid-cols-2 gap-8'
             image={tagtrack}
             framework='HTML | JavaScript | Python'
@@ -152,6 +153,7 @@ const Home = () => {
             projectref="/"
             weburl="https://cpe-easygame.firebaseapp.com"
             name='EasyGame'
+            date="2019"
             position='flex flex-col lg:flex-row-reverse gap-8'
             image={easygame}
             framework='Python | Construct 3 | Firebase'
@@ -165,6 +167,7 @@ const Home = () => {
             projectref="/"
             weburl="/"
             name='KU-ACTY'
+            date="2020"
             position='grid lg:grid-cols-2 gap-8'
             image={kuacty}
             framework='React | Material UI'
@@ -179,6 +182,7 @@ const Home = () => {
             projectref="/"
             weburl="/"
             name='Heat Alert'
+            date="2021"
             position='flex flex-col lg:flex-row-reverse gap-8'
             image={heatalert}
             framework='Python'
@@ -191,6 +195,7 @@ const Home = () => {
             projectref="/"
             weburl="https://fynspace.com"
             name='Fynspace'
+            date="2021"
             position='grid lg:grid-cols-2 gap-8'
             image={fynspace}
             framework='Next.js | Strapi | Tailwind CSS'
@@ -205,6 +210,7 @@ const Home = () => {
             projectref="/"
             weburl="https://laevatein2070-osc.vercel.app/online-simple-circuit"
             name='Online Simple Circuit'
+            date="2022"
             position='flex flex-col lg:flex-row-reverse gap-8'
             image={osc}
             framework='React | GoJS | Tailwind CSS'
@@ -219,25 +225,13 @@ const Home = () => {
             projectref="/"
             weburl="/"
             name='Goohiw'
+            date="2022"
             position='grid lg:grid-cols-2 gap-8'
             image={goohiw}
             framework='JSP | HTML | Tailwind CSS'
             description="A practice project in Web IR subject. A search engine about that food. With a custom
             web crawler made for crawling some Thai food-related website as a database. The project has been done in JSP
             host locally with Apache Tomcat. And the frontend page has been done in HTML with a help of Tailwind CSS."
-          />
-          <Card
-            isInfo={false}
-            isWeb={true}
-            projectref="/"
-            weburl="/"
-            name='React Practice Projects'
-            position='flex flex-col lg:flex-row-reverse gap-8'
-            image={reacticon}
-            framework='React with Many more'
-            description="A lot of small personal project to improve my React skills. Inspired by some React
-            coding roadmap found on some twitter comment. I decided to use it as an idea for coding practice
-            and trying a different tools or framework. Please see my GitHub for more details about what I have done."
           />
         </div>
 
