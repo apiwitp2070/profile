@@ -232,7 +232,7 @@ const Home = () => {
             projectref="/"
             weburl="/"
             name='React Practice Projects'
-            position='grid lg:grid-cols-2 gap-8'
+            position='flex flex-col lg:flex-row-reverse gap-8'
             image={reacticon}
             framework='React with Many more'
             description="A lot of small personal project to improve my React skills. Inspired by some React
