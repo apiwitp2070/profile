@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export default function Card({
 	name,
+	date,
 	position,
   image,
   framework,
@@ -14,6 +15,7 @@ export default function Card({
 	projectref,
 } : {
 	name: any,
+	date: any,
 	position: any,
 	image: any,
 	framework: any,
@@ -24,13 +26,17 @@ export default function Card({
 	projectref: any,
 }) {
 	const card = 'rounded-md shadow mx-4 lg:mx-8 my-20 md:p-4'
-  const pname = 'mb-8 text-3xl font-semibold p-4'
+  const pname = 'text-3xl pr-4'
+	const pdate = 'text-xl text-gray-500'
   const desc = 'text-gray-500 font-semibold'
 	const button = "mr-4 mt-12 px-4 py-2 border border-black bg-black text-white hover:bg-white hover:text-black transition duration-300 rounded-md"
 
   return (
 		<div className={card}>
-			<h1 className={pname}>{name}</h1>
+			<div className="p-4 mb-8 flex items-end font-semibold">
+				<h1 className={pname}>{name}</h1>
+				<h1 className={pdate}>{date}</h1>
+			</div>
 			<div className={position}>
 				<Image 
 					placeholder="blur"
