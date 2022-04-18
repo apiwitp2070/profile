@@ -9,10 +9,8 @@ export default function Card({
   image,
   framework,
   description,
-	isInfo,
 	isWeb,
 	weburl,
-	projectref,
 } : {
 	name: any,
 	date: any,
@@ -20,10 +18,8 @@ export default function Card({
 	image: any,
 	framework: any,
 	description: any,
-	isInfo: any,
 	isWeb: any,
 	weburl: any,
-	projectref: any,
 }) {
 	const card = 'rounded-md shadow mx-4 lg:mx-8 my-20 md:p-4'
   const pname = 'text-3xl pr-4'
@@ -51,11 +47,6 @@ export default function Card({
 					<p className='mt-4 text-justify'>
 						{description}
 					</p>
-					<Link href={projectref ?? ''} passHref>
-						<button className={isInfo ? button : 'hidden'}>
-							More Details
-						</button>
-					</Link>
 					<a href={weburl} target='_blank' rel='noopener noreferrer'>
 						<button className={isWeb ? button : 'hidden'}>
 							Visit Site
