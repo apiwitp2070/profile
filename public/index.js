@@ -8,8 +8,8 @@ import kuacty2 from './kuacty2.png'
 import kuacty3 from './kuacty3.png'
 import heatalert from './heatalert.png'
 import osc from './osc.png'
-import reacticon from './reacticon.png'
 import goohiw from './goohiw.png'
+import mathgame from './mathgame.png'
 
 export {
     profile,
@@ -22,6 +22,6 @@ export {
     kuacty3,
     heatalert,
     osc,
-    reacticon,
     goohiw,
+    mathgame,
 }

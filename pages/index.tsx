@@ -12,8 +12,8 @@ import {
   kuacty,
   heatalert,
   osc,
-  reacticon,
   goohiw,
+  mathgame,
 } from '../public'
 
 const Home = () => {
@@ -125,6 +125,7 @@ const Home = () => {
               <div className='rounded-md border border-black text-black max-w-fit mt-8'>
                 <div className='font-normal rounded-md hover:translate-x-3 hover:bg-black hover:text-white duration-300 px-4 py-2'>Download Resume</div>
               </div>
+              <p className='mt-2'>(Unavailable at this moment)</p>
             </div>
           </div>
         </div>
@@ -134,9 +135,7 @@ const Home = () => {
 
         <div style={{maxWidth: 1215}} className='bg-white text-black mx-auto'>
           <Card
-            isInfo={true}
             isWeb={false}
-            projectref="/projects/tagtrack"
             weburl="/"
             name='Tagtrack'
             date="2019"
@@ -148,9 +147,7 @@ const Home = () => {
             Design for phobia's patient that might encounter their cause unexpectly."
           />
           <Card
-            isInfo={false}
             isWeb={true}
-            projectref="/"
             weburl="https://cpe-easygame.firebaseapp.com"
             name='EasyGame'
             date="2019"
@@ -158,13 +155,11 @@ const Home = () => {
             image={easygame}
             framework='Python | Construct 3 | Firebase'
             description="A simple 2-players local shooting game that can be play with a keyboard or 
-            a single button on an IoT board. The gaming part has been developed with construct 3 engine
+            a single button on an IoT board. The gaming part has been developed with Construct 3 engine
             and hosted with Google Firebase."
           />
           <Card
-            isInfo={false}
             isWeb={false}
-            projectref="/"
             weburl="/"
             name='KU-ACTY'
             date="2020"
@@ -177,9 +172,7 @@ const Home = () => {
             details such as time or place that that activity take place."
           />
           <Card
-            isInfo={false}
             isWeb={false}
-            projectref="/"
             weburl="/"
             name='Heat Alert'
             date="2021"
@@ -190,9 +183,7 @@ const Home = () => {
             the room exceed some point, It will sent an alarm to the room that have people."
           />
           <Card
-            isInfo={false}
             isWeb={true}
-            projectref="/"
             weburl="https://fynspace.com"
             name='Fynspace'
             date="2021"
@@ -202,12 +193,10 @@ const Home = () => {
             description="An art lover community. You can explore a variety of arts inside Fynspace. 
             Everyone is welcomed. No matter that you are an artist, or just only people who took 
             interest in art. You can upload or take place in a bid for an art you want!
-            Some pages of the website is a part of my work from an internship during May and June 2021."
+            Some pages of the website is my work from an internship during May and June 2021."
           />
           <Card
-            isInfo={false}
             isWeb={true}
-            projectref="/"
             weburl="https://online-simple-circuit.vercel.app/"
             name='Online Simple Circuit'
             date="2022"
@@ -220,18 +209,27 @@ const Home = () => {
             component."
           />
           <Card
-            isInfo={false}
             isWeb={false}
-            projectref="/"
             weburl="/"
             name='Goohiw'
             date="2022"
             position='grid lg:grid-cols-2 gap-8'
             image={goohiw}
             framework='JSP | HTML | Tailwind CSS'
-            description="A practice project in Web IR subject. A search engine about that food. With a custom
+            description="A practice project in Web IR subject. A search engine about Thai food. With a custom
             web crawler made for crawling some Thai food-related website as a database. The project has been done in JSP
             host locally with Apache Tomcat. And the frontend page has been done in HTML with a help of Tailwind CSS."
+          />
+          <Card
+            isWeb={true}
+            weburl="https://math-game-orcin.vercel.app/"
+            name='Math Game'
+            date="2022"
+            position='flex flex-col lg:flex-row-reverse gap-8'
+            image={mathgame}
+            framework='Next.js | Tailwind CSS'
+            description="A personal project about math-related web app. The website consist of Random number generator, A guessing game,
+            A simple calculator and a math game call THR3ES. which you need to select the lowest number shown in the screen."
           />
         </div>
 
