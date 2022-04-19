@@ -15,6 +15,7 @@ import {
   goohiw,
   mathgame,
 } from '../public'
+import Link from 'next/link'
 
 const Home = () => {
   const about = useRef<any>(null);
@@ -123,9 +124,12 @@ const Home = () => {
                 interest in using and improving my skill to develop a simple yet beautiful website in a various way.
               </p>
               <div className='rounded-md border border-black text-black max-w-fit mt-8'>
-                <div className='font-normal rounded-md hover:translate-x-3 hover:bg-black hover:text-white duration-300 px-4 py-2'>Download Resume</div>
+              <Link href='/Apiwit.pdf?'>
+                <a target='_blank' rel='noopener noreferrer'>
+                  <div className='font-normal rounded-md hover:translate-x-3 hover:bg-black hover:text-white duration-300 px-4 py-2'>Download Resume</div>
+                </a>
+              </Link>
               </div>
-              <p className='mt-2'>(Unavailable at this moment)</p>
             </div>
           </div>
         </div>
