@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FaFacebookSquare, FaGithub } from 'react-icons/fa'
+import { AiOutlinePhone, AiOutlineMail, AiOutlineGithub, AiOutlineFacebook } from 'react-icons/ai';
 import Image from 'next/image'
 import Head from 'next/head'
 import Card from './components/card'
@@ -76,7 +77,6 @@ const Home = () => {
       <div>
 
         <div id='introduction' className='bg-black text-white h-screen flex justify-center relative noselect'>
-
           <div className='z-0 w-full pt-8 sm:mx-4 md:mx-32 flex flex-col justify-center'>
             <div className='flex flex-col md:flex-row-reverse justify-center'>
               <div id='pfp' className='w-1/2 max-w-2xs lg:max-w-xs place-self-center md:ml-12 lg:ml-16 xl:ml-32'>
@@ -107,23 +107,29 @@ const Home = () => {
               <h5 onClick={scrollToProject} className='ml-4 hover:text-orange-300 uppercase transition duration-300'>Projects</h5>
             </div>   
           </div>
-
         </div>
 
         <div ref={about} className='bg-gray-100 text-black pb-20'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fillOpacity="1" d="M0,32L720,160L1440,32L1440,0L720,0L0,0Z"></path></svg>
-          <div className='grid grid-cols-1 md:grid-cols-2 mx-8 md:mx-32'>
-            <div>
-              
+          <div style={{maxWidth: 1215}} className='grid grid-cols-1 md:grid-cols-2 mx-8 xl:mx-auto'>
+            <div className='font-light mb-12 md:mt-20 mb:my-0'>
+              <span className='w-fit flex items-center mb-2'>
+                <AiOutlinePhone className='w-5 h-5 mr-4' />(+66) 91 923 5649</span>
+              <span className='w-fit flex items-center mb-2'>
+                <AiOutlineMail className='w-5 h-5 mr-4' />apiwit2070@gmail.com</span>
+              <a href="https://web.facebook.com/apiwit.p" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 mb-2 hover:text-blue-600'>
+                <AiOutlineFacebook className='w-5 h-5 mr-4'/>Apiwit Prasittikarnkul</a>
+              <a href="https://github.com/laevatein2070" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 mb-2 hover:text-blue-600'>
+                <AiOutlineGithub className='w-5 h-5 mr-4' />laevatein2070</a>
             </div>
             <div className='text-justify font-light md:text-lg'>
               <h1 className='mb-8 font-semibold text-3xl md:text-4xl text-gray-800'>About Me</h1>
               <p>Hello, My name is Apiwit prasittikarnkul. You can call me Yoseph or Yo.</p>
-              <p>
-                Graduated from Kasetsart University in major of Computer Engineering, I am junior frontend developer who have 
+              <p className='mt-4'>
+                Graduated from Kasetsart University, with a Bachelor degree in Computer Engineering. I am junior frontend developer who have 
                 interest in using and improving my skill to develop a simple yet beautiful website in a various way.
               </p>
-              <div className='rounded-md border border-black text-black max-w-fit mt-8'>
+              <div className='rounded-md border border-black text-black max-w-fit mt-12'>
               <Link href='/Apiwit.pdf?'>
                 <a target='_blank' rel='noopener noreferrer'>
                   <div className='font-normal rounded-md hover:translate-x-3 hover:bg-black hover:text-white duration-300 px-4 py-2'>Download Resume</div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Card({
 	name,
@@ -21,7 +20,7 @@ export default function Card({
 	isWeb: any,
 	weburl: any,
 }) {
-	const card = 'rounded-md shadow mx-4 lg:mx-8 my-20 md:p-4'
+	const card = 'rounded-md border shadow-md mx-4 lg:mx-8 my-20 md:p-4'
   const pname = 'text-3xl pr-4'
 	const pdate = 'text-xl text-gray-500'
   const desc = 'text-gray-500 font-semibold'
