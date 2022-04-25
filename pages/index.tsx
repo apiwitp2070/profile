@@ -17,6 +17,7 @@ import {
   goohiw,
   mathgame,
 } from '../public'
+import Script from 'next/script';
 
 const Home = () => {
   const about = useRef<any>(null);
@@ -44,10 +45,7 @@ const Home = () => {
 
   return (
     <div>
-      <script src="/js/wow.min.js"></script>
-      <script>
-        new WOW().init();
-      </script>
+      <Script src="/js/wow.min.js"></Script>
 
       <Head>
         <title>Apiwit | Profile</title>
