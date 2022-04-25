@@ -3,6 +3,7 @@ import { FaFacebookSquare, FaGithub } from 'react-icons/fa'
 import { AiOutlinePhone, AiOutlineMail, AiOutlineGithub, AiOutlineFacebook } from 'react-icons/ai';
 import Image from 'next/image'
 import Head from 'next/head'
+import Link from 'next/link'
 import Card from './components/card'
 import {
   profile,
@@ -16,21 +17,17 @@ import {
   goohiw,
   mathgame,
 } from '../public'
-import Link from 'next/link'
 
 const Home = () => {
   const about = useRef<any>(null);
   const project = useRef<any>(null);
-  const [headBg, setheadBg] = useState('z-50 hidden fixed top-4 left-4 right-4 h-16 noselect font-light')
-  const [header, setHeader] = useState('');
+  const [headBg, setheadBg] = useState('hidden')
 
   const listenScrollEvent = (e: any) => {
     if (window.scrollY < 720) {
-      setHeader('p-4 flex text-black');
-      setheadBg('z-50 transition duration-300 hidden fixed top-0 left-0 right-0 h-16 noselect font-light');
+      setheadBg('hidden');
     } else {
-      setHeader('p-4 flex text-black');
-      setheadBg('z-50 transition duration-300 block bg-white shadow fixed top-0 left-0 right-0 h-16 noselect font-light')
+      setheadBg('block bg-white shadow');
     }
   }
 
@@ -58,7 +55,7 @@ const Home = () => {
         <link rel="stylesheet" href="/css/animate.css" />
       </Head>
 
-      <header className={headBg}>
+      <header className={`z-50 fixed top-0 left-0 right-0 h-16 noselect font-light ${headBg}`}>
         <div className='absolute mx-8 my-4'>
           <Image 
             priority={true}
@@ -71,7 +68,7 @@ const Home = () => {
           />
         </div>
         <div id='menu' className='absolute right-0 text-xl'>
-          <div className={header}>
+          <div className='p-4 flex text-black'>
             <h5 className='px-4' onClick={scrollToAbout}>About</h5>
             <h5 className='px-4' onClick={scrollToProject}>Projects</h5>
           </div>
@@ -81,6 +78,7 @@ const Home = () => {
 
       <div>
 
+        {/*Home screen*/}
         <div id='introduction' className='bg-black text-white h-screen flex justify-center relative noselect'>
           <div className='z-0 w-full pt-8 sm:mx-4 md:mx-32 flex flex-col justify-center'>
             <div className='flex flex-col md:flex-row-reverse justify-center'>
@@ -114,22 +112,31 @@ const Home = () => {
           </div>
         </div>
 
+        {/*Info section*/}
         <div ref={about} className='bg-gray-100 text-black pb-20'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fillOpacity="1" d="M0,32L720,160L1440,32L1440,0L720,0L0,0Z"></path></svg>
+          
           <div style={{maxWidth: 1215}} className='grid grid-cols-1 md:grid-cols-2 mx-8 xl:mx-auto'>
+            
             <div data-wow-delay='0.5s' className='wow fadeInLeft font-light mb-12 md:mt-20 mb:my-0'>
               <span className='w-fit flex items-center mb-2'>
-                <AiOutlinePhone className='w-5 h-5 mr-4' />(+66) 91 923 5649</span>
+                <AiOutlinePhone className='w-5 h-5 mr-4' />
+                (+66) 91 923 5649</span>
               <span className='w-fit flex items-center mb-2'>
-                <AiOutlineMail className='w-5 h-5 mr-4' />apiwit2070@gmail.com</span>
+                <AiOutlineMail className='w-5 h-5 mr-4' />
+                apiwit2070@gmail.com</span>
               <a href="https://web.facebook.com/apiwit.p" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 mb-2 hover:text-blue-600'>
-                <AiOutlineFacebook className='w-5 h-5 mr-4'/>Apiwit Prasittikarnkul</a>
+                <AiOutlineFacebook className='w-5 h-5 mr-4'/>
+                Apiwit Prasittikarnkul</a>
               <a href="https://github.com/laevatein2070" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 mb-2 hover:text-blue-600'>
-                <AiOutlineGithub className='w-5 h-5 mr-4' />laevatein2070</a>
+                <AiOutlineGithub className='w-5 h-5 mr-4' />
+                laevatein2070</a>
             </div>
             <div data-wow-delay='0.2s' className='wow fadeInRight text-justify font-light md:text-lg'>
               <h1 className='mb-8 font-semibold text-3xl md:text-4xl text-gray-800'>About Me</h1>
-              <p>Hello, My name is Apiwit prasittikarnkul. You can call me Yoseph or Yo.</p>
+              <p>
+                Hello, My name is Apiwit prasittikarnkul. You can call me Yoseph or Yo.
+              </p>
               <p className='mt-4'>
                 Graduated from Kasetsart University, with a Bachelor degree in Computer Engineering. I am junior frontend developer who have 
                 interest in using and improving my skill to develop a simple yet beautiful website in a various way.
@@ -148,6 +155,7 @@ const Home = () => {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f6" fillOpacity="1" d="M0,128L480,160L960,32L1440,96L1440,0L960,0L480,0L0,0Z"></path></svg>
         <div ref={project}></div>
 
+        {/*Projects*/}
         <div style={{maxWidth: 1215}} className='bg-white text-black mx-auto'>
           <Card
             isWeb={false}
