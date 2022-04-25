@@ -4,6 +4,7 @@ import { AiOutlinePhone, AiOutlineMail, AiOutlineGithub, AiOutlineFacebook } fro
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
+import Script from 'next/script';
 import Card from './components/card'
 import {
   profile,
@@ -17,7 +18,6 @@ import {
   goohiw,
   mathgame,
 } from '../public'
-import Script from 'next/script';
 
 const Home = () => {
   const about = useRef<any>(null);
