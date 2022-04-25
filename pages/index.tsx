@@ -47,10 +47,15 @@ const Home = () => {
 
   return (
     <div>
+      <script src="/js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
 
       <Head>
         <title>Apiwit | Profile</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/css/animate.css" />
       </Head>
 
       <header className={headBg}>
@@ -112,7 +117,7 @@ const Home = () => {
         <div ref={about} className='bg-gray-100 text-black pb-20'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fillOpacity="1" d="M0,32L720,160L1440,32L1440,0L720,0L0,0Z"></path></svg>
           <div style={{maxWidth: 1215}} className='grid grid-cols-1 md:grid-cols-2 mx-8 xl:mx-auto'>
-            <div className='font-light mb-12 md:mt-20 mb:my-0'>
+            <div data-wow-delay='0.5s' className='wow fadeInLeft font-light mb-12 md:mt-20 mb:my-0'>
               <span className='w-fit flex items-center mb-2'>
                 <AiOutlinePhone className='w-5 h-5 mr-4' />(+66) 91 923 5649</span>
               <span className='w-fit flex items-center mb-2'>
@@ -122,7 +127,7 @@ const Home = () => {
               <a href="https://github.com/laevatein2070" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 mb-2 hover:text-blue-600'>
                 <AiOutlineGithub className='w-5 h-5 mr-4' />laevatein2070</a>
             </div>
-            <div className='text-justify font-light md:text-lg'>
+            <div data-wow-delay='0.2s' className='wow fadeInRight text-justify font-light md:text-lg'>
               <h1 className='mb-8 font-semibold text-3xl md:text-4xl text-gray-800'>About Me</h1>
               <p>Hello, My name is Apiwit prasittikarnkul. You can call me Yoseph or Yo.</p>
               <p className='mt-4'>
