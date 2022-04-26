@@ -44,7 +44,7 @@ const Home = () => {
       </Head>
 
       <header className={`z-50 fixed top-0 left-0 right-0 h-16 noselect font-light transition duration-300 ${headBg}`}>
-        <div className='absolute mx-8 my-4'>
+        <div className='cursor-pointer absolute mx-8 my-4'>
           <Image 
             priority={true}
             src={homeicon} 
@@ -57,8 +57,8 @@ const Home = () => {
         </div>
         <div id='menu' className='absolute right-0 text-xl'>
           <div className='p-4 flex text-black'>
-            <h5 className='px-4' onClick={scrollToAbout}>About</h5>
-            <h5 className='px-4' onClick={scrollToProject}>Projects</h5>
+            <h5 className='px-4 cursor-pointer' onClick={scrollToAbout}>About</h5>
+            <h5 className='px-4 cursor-pointer' onClick={scrollToProject}>Projects</h5>
           </div>
         </div>
         
@@ -93,9 +93,9 @@ const Home = () => {
               </div>
             </div>
             <div id='aboutme' className='flex absolute bottom-8 md:bottom-12 place-self-center'>
-              <h5 onClick={scrollToAbout} className='text-white hover:text-orange-300 uppercase mr-4 transition duration-300'>About Me</h5>
+              <h5 onClick={scrollToAbout} className='text-white hover:text-orange-300 cursor-pointer uppercase mr-4 transition duration-300'>About Me</h5>
               <h5 className='px-2 noselect'>|</h5>
-              <h5 onClick={scrollToProject} className='ml-4 hover:text-orange-300 uppercase transition duration-300'>Projects</h5>
+              <h5 onClick={scrollToProject} className='ml-4 hover:text-orange-300 cursor-pointer uppercase transition duration-300'>Projects</h5>
             </div>   
           </div>
         </div>
