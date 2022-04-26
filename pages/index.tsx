@@ -40,7 +40,6 @@ const Home = () => {
       <Head>
         <title>Apiwit | Profile</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/css/animate.css" />
       </Head>
 
       <header className={`z-50 fixed top-0 left-0 right-0 h-16 noselect font-light ${headBg}`}>
