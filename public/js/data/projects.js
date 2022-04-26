@@ -7,7 +7,7 @@ import {
   osc,
   goohiw,
   mathgame,
-} from '../../public/img'
+} from '../../img'
 
 export const projects = [
   {
