@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Script from 'next/script';
 import Card from './components/card'
 import { profile, homeicon } from '../public/img'
+import { myname, myinfo } from '../public/js/data/myinfo'
 import { projects } from '../public/js/data/projects'
 
 const Home = () => {
@@ -16,9 +17,9 @@ const Home = () => {
 
   const listenScrollEvent = (e: any) => {
     if (window.scrollY < 720) {
-      setheadBg('hidden');
+      setheadBg('-translate-y-16 duration-300');
     } else {
-      setheadBg('block bg-white shadow');
+      setheadBg('translation y-16 bg-white shadow');
     }
   }
 
@@ -42,7 +43,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={`z-50 fixed top-0 left-0 right-0 h-16 noselect font-light ${headBg}`}>
+      <header className={`z-50 fixed top-0 left-0 right-0 h-16 noselect font-light transition duration-300 ${headBg}`}>
         <div className='absolute mx-8 my-4'>
           <Image 
             priority={true}
@@ -80,13 +81,13 @@ const Home = () => {
               <div id='name' className='py-8 place-self-center'>
                 <h1 className='text-4vw md:text-3vw xl:text-2.5vw'>Hi, I am</h1>
                 <h1 className='text-5.5vw sm:text-5vw md:text-4.5vw xl:text-4vw font-bold'>Apiwit Prasittikarnkul</h1>
-                <h1 className='text-4vw sm:text-3.5vw md:text-3vw lg:text-2.5vw font-light'>| Frontend Developer</h1>
+                <h1 className='text-4vw sm:text-3.5vw md:text-3vw lg:text-2.5vw font-light border-l-2 px-4 border-white'>Frontend Developer</h1>
                 <div className='flex mt-4 md:mt-8'>
                 <a href="https://web.facebook.com/apiwit.p" target='_blank' rel='noopener noreferrer'>
-                  <FaFacebookSquare className='text-4.5vw md:text-4xl transition delay-150 duration-300 hover:text-blue-500 hover:scale-110'/>
+                  <FaFacebookSquare className='text-4.5vw md:text-4xl transition delay-150 duration-300 hover:text-blue-400 hover:scale-110'/>
                 </a>
                 <a href="https://github.com/laevatein2070" target='_blank' rel='noopener noreferrer'>
-                  <FaGithub className='text-4.5vw md:text-4xl ml-4 transition delay-150 duration-300 hover:scale-110'/>
+                  <FaGithub className='text-4.5vw md:text-4xl ml-8 transition delay-150 duration-300 hover:text-yellow-300 hover:scale-110'/>
                 </a>
                 </div>
               </div>
@@ -104,29 +105,13 @@ const Home = () => {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fillOpacity="1" d="M0,32L720,160L1440,32L1440,0L720,0L0,0Z"></path></svg>
           
           <div style={{maxWidth: 1215}} className='grid grid-cols-1 md:grid-cols-2 mx-8 xl:mx-auto'>
-            
-            <div data-wow-delay='0.5s' className='wow fadeInLeft font-light mb-12 md:mt-20 mb:my-0'>
-              <span className='w-fit flex items-center mb-2'>
-                <AiOutlinePhone className='w-5 h-5 mr-4' />
-                (+66) 91 923 5649</span>
-              <span className='w-fit flex items-center mb-2'>
-                <AiOutlineMail className='w-5 h-5 mr-4' />
-                apiwit2070@gmail.com</span>
-              <a href="https://web.facebook.com/apiwit.p" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 mb-2 hover:text-blue-600'>
-                <AiOutlineFacebook className='w-5 h-5 mr-4'/>
-                Apiwit Prasittikarnkul</a>
-              <a href="https://github.com/laevatein2070" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 mb-2 hover:text-blue-600'>
-                <AiOutlineGithub className='w-5 h-5 mr-4' />
-                laevatein2070</a>
-            </div>
-            <div data-wow-delay='0.2s' className='wow fadeInRight text-justify font-light md:text-lg'>
+            <div data-wow-delay='0.2s' className='wow fadeInRight text-justify font-light md:text-lg col-start-2'>
               <h1 className='mb-8 font-semibold text-3xl md:text-4xl text-gray-800'>About Me</h1>
               <p>
-                Hello, My name is Apiwit prasittikarnkul. You can call me Yoseph or Yo.
+                {myname}
               </p>
               <p className='mt-4'>
-                Graduated from Kasetsart University, with a Bachelor degree in Computer Engineering. I am junior frontend developer who have 
-                interest in using and improving my skill to develop a simple yet beautiful website in a various way.
+                {myinfo}
               </p>
               <div className='rounded-md border border-black text-black max-w-fit mt-12'>
               <Link href='/docs/Apiwit.pdf?'>
@@ -163,8 +148,22 @@ const Home = () => {
       </div>
       {/*End Body*/}
 
-      <footer className='mt-64 bg-black text-white text-center h-16'>
-
+      <footer className='mt-48 bg-black text-white'>
+        <div style={{maxWidth: 1215}} className='font-light md:mt-20 mx-auto p-8'>
+          <p className='text-2xl mb-4'>Contact Me</p>
+          <span className='w-fit flex items-center mb-2'>
+            <AiOutlinePhone className='w-5 h-5 mr-4' />
+            (+66) 91 923 5649</span>
+          <span className='w-fit flex items-center mb-2'>
+            <AiOutlineMail className='w-5 h-5 mr-4' />
+            apiwit2070@gmail.com</span>
+          <a href="https://web.facebook.com/apiwit.p" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 mb-2 hover:text-blue-400'>
+            <AiOutlineFacebook className='w-5 h-5 mr-4'/>
+            Apiwit Prasittikarnkul</a>
+          <a href="https://github.com/laevatein2070" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 hover:text-yellow-300'>
+            <AiOutlineGithub className='w-5 h-5 mr-4' />
+            laevatein2070</a>
+        </div>
       </footer>
 
     </div>
