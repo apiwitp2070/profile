@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Script from 'next/script';
 import Card from './components/card'
 import { profile, homeicon } from '../public/img'
-import projects from './data/projects'
+import { projects } from './data/projects'
 
 const Home = () => {
   const about = useRef<any>(null);

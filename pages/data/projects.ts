@@ -91,5 +91,3 @@ export const projects = [
     "description": "A personal project about math-related web app. The website consist of Random number generator, A guessing game, A simple calculator and a math game call THR3ES. which you need to select the lowest number shown in the screen."
   }
 ]
-
-export default projects;
