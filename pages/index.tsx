@@ -104,7 +104,7 @@ const Home = () => {
 
         {/*Info section*/}
         <div ref={about} className='bg-gray-100 text-black pb-20'>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fillOpacity="1" d="M0,32L720,160L1440,32L1440,0L720,0L0,0Z"></path></svg>
+          <svg className='-mt-2' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fillOpacity="1" d="M0,32L720,160L1440,32L1440,0L720,0L0,0Z"></path></svg>
           
           <div style={{maxWidth: 1215}} className='grid grid-cols-1 md:grid-cols-2 mx-8 xl:mx-auto'>
             <div data-wow-delay='0.2s' className='wow fadeInRight text-justify font-light md:text-lg col-start-2'>
@@ -126,7 +126,7 @@ const Home = () => {
           </div>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f6" fillOpacity="1" d="M0,128L480,160L960,32L1440,96L1440,0L960,0L480,0L0,0Z"></path></svg>
+        <svg className='-mt-2' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f6" fillOpacity="1" d="M0,128L480,160L960,32L1440,96L1440,0L960,0L480,0L0,0Z"></path></svg>
         <div ref={project}></div>
 
         {/*Projects*/}
