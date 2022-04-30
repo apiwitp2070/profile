@@ -13,7 +13,7 @@ import { projects } from '../public/js/data/projects'
 const Home = () => {
   const about = useRef<any>(null);
   const project = useRef<any>(null);
-  const [headBg, setheadBg] = useState('hidden')
+  const [headBg, setheadBg] = useState('hidden');
 
   const listenScrollEvent = (e: any) => {
     if (window.scrollY < 720) {
@@ -44,21 +44,23 @@ const Home = () => {
       </Head>
 
       <header className={`z-50 fixed top-0 left-0 right-0 h-16 noselect font-light transition duration-300 ${headBg}`}>
-        <div className='cursor-pointer absolute mx-8 my-4'>
-          <Image 
-            priority={true}
-            src={homeicon} 
-            alt='homeicon'
-            width={36}
-            height={36}
-            className='lg:hover:rotate-180 transition delay-50 duration-500'
-            onClick={scrollToTop}
-          />
-        </div>
-        <div id='menu' className='absolute right-0 text-xl'>
-          <div className='p-4 flex text-black'>
-            <h5 className='px-4 cursor-pointer' onClick={scrollToAbout}>About</h5>
-            <h5 className='px-4 cursor-pointer' onClick={scrollToProject}>Projects</h5>
+        <div style={{maxWidth: 1215}} className="mx-auto relative">
+          <div className='cursor-pointer absolute mx-8 my-4'>
+            <Image 
+              priority={true}
+              src={homeicon} 
+              alt='homeicon'
+              width={36}
+              height={36}
+              className='lg:hover:rotate-180 transition delay-50 duration-500'
+              onClick={scrollToTop}
+            />
+          </div>
+          <div id='menu' className='absolute right-0 text-xl'>
+            <div className='p-4 flex text-black'>
+              <h5 className='px-4 cursor-pointer' onClick={scrollToAbout}>About</h5>
+              <h5 className='px-4 cursor-pointer' onClick={scrollToProject}>Projects</h5>
+            </div>
           </div>
         </div>
         
@@ -86,7 +88,7 @@ const Home = () => {
                 <a href="https://web.facebook.com/apiwit.p" target='_blank' rel='noopener noreferrer'>
                   <FaFacebookSquare className='text-4.5vw md:text-4xl transition delay-150 duration-300 hover:text-blue-400 hover:scale-110'/>
                 </a>
-                <a href="https://github.com/laevatein2070" target='_blank' rel='noopener noreferrer'>
+                <a href="https://github.com/apiwitp2070" target='_blank' rel='noopener noreferrer'>
                   <FaGithub className='text-4.5vw md:text-4xl ml-8 transition delay-150 duration-300 hover:text-yellow-300 hover:scale-110'/>
                 </a>
                 </div>
@@ -160,9 +162,9 @@ const Home = () => {
           <a href="https://web.facebook.com/apiwit.p" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 mb-2 hover:text-blue-400'>
             <AiOutlineFacebook className='w-5 h-5 mr-4'/>
             Apiwit Prasittikarnkul</a>
-          <a href="https://github.com/laevatein2070" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 hover:text-yellow-300'>
+          <a href="https://github.com/apiwitp2070" target='_blank' rel='noopener noreferrer' className='w-fit flex items-center transition duration-300 hover:text-yellow-300'>
             <AiOutlineGithub className='w-5 h-5 mr-4' />
-            laevatein2070</a>
+            apiwitp2070</a>
         </div>
       </footer>
 
