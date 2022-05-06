@@ -132,7 +132,7 @@ const Home = () => {
         {/*Projects*/}
         <div style={{maxWidth: 1215}} className='bg-white text-black mx-auto'>
           {projects.map(({isWeb, weburl, name, date, position, image, framework, description}) => (
-            <div key={name} className='wow fadeInUp rounded-md border shadow-md mx-4 lg:mx-8 my-20 md:p-4' data-wow-delay="0.4s">
+            <div key={name} className='wow fadeInUp rounded-md border border-gray-300 shadow-lg mx-4 lg:mx-8 my-20 md:p-4' data-wow-delay="0.4s">
               <Card
                 isWeb={isWeb}
                 weburl={weburl}
