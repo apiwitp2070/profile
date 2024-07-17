@@ -1,12 +1,13 @@
 import {
   tagtrack,
   easygame,
-  fynspace,
   kuacty,
   heatalert,
   osc,
   goohiw,
   mathgame,
+  trsk,
+  ratio,
 } from "../../img";
 
 const oddBox = "grid lg:grid-cols-2 gap-8";
@@ -89,5 +90,27 @@ export const projects = [
     framework: "Next.js | Tailwind CSS",
     description:
       "A personal project about math-related web app. The website consist of Random number generator, A guessing game, A simple calculator and a math game call THR3ES. which you need to select the lowest number shown in the screen.",
+  },
+  {
+    isWeb: "true",
+    weburl: "https://trsk-five.vercel.app/",
+    name: "TRSK",
+    date: "2024",
+    position: oddBox,
+    image: trsk,
+    framework: "Nuxt 3 | Vuetify | Tailwind CSS",
+    description:
+      "A simple to do list made in Nuxt 3. Comes with simple Create and remove function. Also playing around with swipe gesture such as slide left to mark as done. The swipe feature only works in mobile.",
+  },
+  {
+    isWeb: "true",
+    weburl: "https://ratio-converter.vercel.app/",
+    name: "Ratio Converter",
+    date: "2024",
+    position: evenBox,
+    image: ratio,
+    framework: "Nuxt 3 | Vuetify | Tailwind CSS",
+    description:
+      "Real time ratio converter made in Nuxt 3. Result ratio will be show according to base input number which can be changed and calculate new result in realtime without any input confirmation such as Enter button.",
   },
 ];
